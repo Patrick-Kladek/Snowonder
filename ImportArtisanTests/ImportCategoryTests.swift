@@ -46,11 +46,13 @@ class ImportCategoryTests: XCTestCase {
         XCTAssertFalse(importCategory00.hashValue == importCategory1.hashValue)
         XCTAssertFalse(importCategory1.hashValue == importCategory2.hashValue)
         XCTAssertFalse(importCategory2.hashValue == importCategory3.hashValue)
-        
-        let constructingHash = "First".hashValue ^ "^import .*".hashValue ^ ComparisonResult.orderedAscending.hashValue
-        let constructedHash = -8442284183870363690
+
+        var hasher = Hasher()
+        hasher.combine("First")
+        hasher.combine("^import .*")
+        hasher.combine(ComparisonResult.orderedAscending)
+        let constructingHash = hasher.finalize()
         
         XCTAssertTrue(importCategory00.hashValue == constructingHash)
-        XCTAssertTrue(importCategory00.hashValue == constructedHash)
     }
 }
