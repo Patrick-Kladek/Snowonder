@@ -14,11 +14,6 @@ class ViewController: NSViewController {
 
     private struct Constant {
 
-        struct ScriptInfo {
-
-            static let openSystemPreferencesExtensions: Script.Info = (Bundle.main, "open_system_preferences_extensions", .scpt)
-        }
-
         struct URL {
 
             static let gitHub = Foundation.URL(string: "https://github.com/Karetski/Snowonder")
