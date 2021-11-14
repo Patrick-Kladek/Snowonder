@@ -3,12 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CD711D372709BB4B00073018 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD711D362709BB4B00073018 /* XcodeKit.framework */; };
 		CD711D392709BBAD00073018 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD711D362709BB4B00073018 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDA1CB8C2740F83600CC365C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA1CB8B2740F83600CC365C /* File.swift */; };
+		CDA1CB942740F85800CC365C /* cli in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA1CB892740F83600CC365C /* cli */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CDA1CB972740F8F200CC365C /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = CDA1CB962740F8F200CC365C /* ArgumentParser */; };
+		CDA1CB992740F99F00CC365C /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = CDA1CB982740F99F00CC365C /* ArgumentParser */; };
+		CDA1CB9B2740FA8C00CC365C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA1CB9A2740FA8C00CC365C /* main.swift */; };
+		CDA1CB9C2740FCD000CC365C /* ImportArtisan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8E6983A1F0E5B2D00D50213 /* ImportArtisan.framework */; };
+		CDA1CB9E2740FFB300CC365C /* TextBufferEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA1CB9D2740FFB300CC365C /* TextBufferEditor.swift */; };
+		CDA1CBA02741060600CC365C /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA1CB9F2741060600CC365C /* Folder.swift */; };
+		CDA1CBA2274106A500CC365C /* SortImportOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA1CBA1274106A500CC365C /* SortImportOperation.swift */; };
+		CDA1CBA4274111C800CC365C /* Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA1CBA3274111C800CC365C /* Sugar.swift */; };
 		E84038641F0F78B2003DF6C3 /* open_system_preferences_extensions.scpt in Resources */ = {isa = PBXBuildFile; fileRef = E84038631F0F78B2003DF6C3 /* open_system_preferences_extensions.scpt */; };
 		E84038661F0F8821003DF6C3 /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84038651F0F8821003DF6C3 /* Script.swift */; };
 		E84038701F0FC4EC003DF6C3 /* ImportArtisan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8E6983A1F0E5B2D00D50213 /* ImportArtisan.framework */; };
@@ -36,6 +46,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CDA1CB902740F83C00CC365C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B3C6AB1EF7CFB500CD7679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDA1CB882740F83600CC365C;
+			remoteInfo = cli;
+		};
 		E84038711F0FC4EC003DF6C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E8B3C6AB1EF7CFB500CD7679 /* Project object */;
@@ -71,6 +88,25 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CDA1CB872740F83600CC365C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		CDA1CB932740F84700CC365C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				CDA1CB942740F85800CC365C /* cli in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E86335771F1611C5000A7053 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,6 +133,13 @@
 
 /* Begin PBXFileReference section */
 		CD711D362709BB4B00073018 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		CDA1CB892740F83600CC365C /* cli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cli; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA1CB8B2740F83600CC365C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		CDA1CB9A2740FA8C00CC365C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CDA1CB9D2740FFB300CC365C /* TextBufferEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBufferEditor.swift; sourceTree = "<group>"; };
+		CDA1CB9F2741060600CC365C /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
+		CDA1CBA1274106A500CC365C /* SortImportOperation.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = SortImportOperation.swift; sourceTree = "<group>"; tabWidth = 4; };
+		CDA1CBA3274111C800CC365C /* Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sugar.swift; sourceTree = "<group>"; };
 		E81E98941F5D752C00BF0A12 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E840385F1F0E6266003DF6C3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E84038631F0F78B2003DF6C3 /* open_system_preferences_extensions.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = open_system_preferences_extensions.scpt; sourceTree = "<group>"; };
@@ -131,6 +174,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CDA1CB862740F83600CC365C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA1CB9C2740FCD000CC365C /* ImportArtisan.framework in Frameworks */,
+				CDA1CB992740F99F00CC365C /* ArgumentParser in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E84038681F0FC4EC003DF6C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -143,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDA1CB972740F8F200CC365C /* ArgumentParser in Frameworks */,
 				E86335731F1611C5000A7053 /* ImportArtisan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +226,19 @@
 				CD711D362709BB4B00073018 /* XcodeKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDA1CB8A2740F83600CC365C /* cli */ = {
+			isa = PBXGroup;
+			children = (
+				CDA1CB9A2740FA8C00CC365C /* main.swift */,
+				CDA1CB8B2740F83600CC365C /* File.swift */,
+				CDA1CB9F2741060600CC365C /* Folder.swift */,
+				CDA1CBA1274106A500CC365C /* SortImportOperation.swift */,
+				CDA1CBA3274111C800CC365C /* Sugar.swift */,
+				CDA1CB9D2740FFB300CC365C /* TextBufferEditor.swift */,
+			);
+			path = cli;
 			sourceTree = "<group>";
 		};
 		E84038611F0F74BA003DF6C3 /* Resources */ = {
@@ -213,10 +279,13 @@
 				E8B3C6CD1EF7CFD300CD7679 /* Snowonder Extension */,
 				E8E6983B1F0E5B2D00D50213 /* ImportArtisan */,
 				E840386C1F0FC4EC003DF6C3 /* ImportArtisanTests */,
+				CDA1CB8A2740F83600CC365C /* cli */,
 				E8B3C6B41EF7CFB500CD7679 /* Products */,
 				CD711D352709BB4B00073018 /* Frameworks */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		E8B3C6B41EF7CFB500CD7679 /* Products */ = {
 			isa = PBXGroup;
@@ -225,6 +294,7 @@
 				E8B3C6C91EF7CFD300CD7679 /* Snowonder Extension.appex */,
 				E8E6983A1F0E5B2D00D50213 /* ImportArtisan.framework */,
 				E840386B1F0FC4EC003DF6C3 /* ImportArtisanTests.xctest */,
+				CDA1CB892740F83600CC365C /* cli */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -307,6 +377,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		CDA1CB882740F83600CC365C /* cli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDA1CB8F2740F83600CC365C /* Build configuration list for PBXNativeTarget "cli" */;
+			buildPhases = (
+				CDA1CB852740F83600CC365C /* Sources */,
+				CDA1CB862740F83600CC365C /* Frameworks */,
+				CDA1CB872740F83600CC365C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cli;
+			packageProductDependencies = (
+				CDA1CB982740F99F00CC365C /* ArgumentParser */,
+			);
+			productName = cli;
+			productReference = CDA1CB892740F83600CC365C /* cli */;
+			productType = "com.apple.product-type.tool";
+		};
 		E840386A1F0FC4EC003DF6C3 /* ImportArtisanTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E84038731F0FC4EC003DF6C3 /* Build configuration list for PBXNativeTarget "ImportArtisanTests" */;
@@ -334,14 +424,19 @@
 				E8B3C6B11EF7CFB500CD7679 /* Resources */,
 				E8B3C6DB1EF7CFD300CD7679 /* Embed App Extensions */,
 				E86335771F1611C5000A7053 /* Embed Frameworks */,
+				CDA1CB932740F84700CC365C /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				E8B3C6D61EF7CFD300CD7679 /* PBXTargetDependency */,
 				E86335761F1611C5000A7053 /* PBXTargetDependency */,
+				CDA1CB912740F83C00CC365C /* PBXTargetDependency */,
 			);
 			name = Snowonder;
+			packageProductDependencies = (
+				CDA1CB962740F8F200CC365C /* ArgumentParser */,
+			);
 			productName = Snowonder;
 			productReference = E8B3C6B31EF7CFB500CD7679 /* Snowonder.app */;
 			productType = "com.apple.product-type.application";
@@ -388,10 +483,13 @@
 		E8B3C6AB1EF7CFB500CD7679 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Karetski;
 				TargetAttributes = {
+					CDA1CB882740F83600CC365C = {
+						CreatedOnToolsVersion = 13.1;
+					};
 					E840386A1F0FC4EC003DF6C3 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = YZYAXKVXRF;
@@ -427,6 +525,9 @@
 				Base,
 			);
 			mainGroup = E8B3C6AA1EF7CFB500CD7679;
+			packageReferences = (
+				CDA1CB952740F8F200CC365C /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = E8B3C6B41EF7CFB500CD7679 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -435,6 +536,7 @@
 				E8B3C6C81EF7CFD300CD7679 /* Snowonder Extension */,
 				E8E698391F0E5B2D00D50213 /* ImportArtisan */,
 				E840386A1F0FC4EC003DF6C3 /* ImportArtisanTests */,
+				CDA1CB882740F83600CC365C /* cli */,
 			);
 		};
 /* End PBXProject section */
@@ -474,6 +576,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CDA1CB852740F83600CC365C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA1CB9B2740FA8C00CC365C /* main.swift in Sources */,
+				CDA1CBA2274106A500CC365C /* SortImportOperation.swift in Sources */,
+				CDA1CBA4274111C800CC365C /* Sugar.swift in Sources */,
+				CDA1CB9E2740FFB300CC365C /* TextBufferEditor.swift in Sources */,
+				CDA1CB8C2740F83600CC365C /* File.swift in Sources */,
+				CDA1CBA02741060600CC365C /* Folder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E84038671F0FC4EC003DF6C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -520,6 +635,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CDA1CB912740F83C00CC365C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDA1CB882740F83600CC365C /* cli */;
+			targetProxy = CDA1CB902740F83C00CC365C /* PBXContainerItemProxy */;
+		};
 		E84038721F0FC4EC003DF6C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E8E698391F0E5B2D00D50213 /* ImportArtisan */;
@@ -549,13 +669,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CDA1CB8D2740F83600CC365C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CDA1CB8E2740F83600CC365C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		E84038741F0FC4EC003DF6C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = YZYAXKVXRF;
 				INFOPLIST_FILE = ImportArtisanTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Karetski.ImportArtisanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -568,7 +725,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = YZYAXKVXRF;
 				INFOPLIST_FILE = ImportArtisanTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Karetski.ImportArtisanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -679,7 +840,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -693,7 +855,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = YZYAXKVXRF;
 				INFOPLIST_FILE = Snowonder/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Karetski.Snowonder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -713,7 +878,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = YZYAXKVXRF;
 				INFOPLIST_FILE = Snowonder/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Karetski.Snowonder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -731,7 +899,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = YZYAXKVXRF;
 				INFOPLIST_FILE = "Snowonder Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Karetski.Snowonder.Snowonder-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -750,7 +922,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = YZYAXKVXRF;
 				INFOPLIST_FILE = "Snowonder Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Karetski.Snowonder.Snowonder-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -777,7 +953,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ImportArtisan/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Karetski.ImportArtisan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -806,7 +986,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ImportArtisan/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Karetski.ImportArtisan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -821,6 +1005,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CDA1CB8F2740F83600CC365C /* Build configuration list for PBXNativeTarget "cli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDA1CB8D2740F83600CC365C /* Debug */,
+				CDA1CB8E2740F83600CC365C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E84038731F0FC4EC003DF6C3 /* Build configuration list for PBXNativeTarget "ImportArtisanTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -867,6 +1060,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CDA1CB952740F8F200CC365C /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CDA1CB962740F8F200CC365C /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDA1CB952740F8F200CC365C /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		CDA1CB982740F99F00CC365C /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDA1CB952740F8F200CC365C /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E8B3C6AB1EF7CFB500CD7679 /* Project object */;
 }
