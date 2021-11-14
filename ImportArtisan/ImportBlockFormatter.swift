@@ -19,7 +19,7 @@ open class ImportBlockFormatter {
         case separateCategories
         
         public static var all: Operations {
-            return [.trimWhitespaces, .uniqueDeclarations, .sortDeclarations, .separateCategories]
+            return [.trimWhitespaces, .uniqueDeclarations, .sortDeclarations]
         }
     }
     
