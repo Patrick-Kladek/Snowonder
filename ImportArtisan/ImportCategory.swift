@@ -25,9 +25,11 @@ public struct ImportCategory : Hashable {
     public var sortingComparisonResult: ComparisonResult
     
     // MARK: - Hashable
-    
-    public var hashValue: Int {
-        return title.hashValue ^ declarationPattern.hashValue ^ sortingComparisonResult.hashValue
+
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(self.title)
+        hasher.combine(self.declarationPattern)
+        hasher.combine(self.sortingComparisonResult)
     }
 }
 
