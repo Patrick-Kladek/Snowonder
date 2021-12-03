@@ -10,7 +10,7 @@
 		CD711D372709BB4B00073018 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD711D362709BB4B00073018 /* XcodeKit.framework */; };
 		CD711D392709BBAD00073018 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD711D362709BB4B00073018 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDA1CB8C2740F83600CC365C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA1CB8B2740F83600CC365C /* File.swift */; };
-		CDA1CB942740F85800CC365C /* cli in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA1CB892740F83600CC365C /* cli */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CDA1CB942740F85800CC365C /* Snowonder-cli in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA1CB892740F83600CC365C /* Snowonder-cli */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CDA1CB972740F8F200CC365C /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = CDA1CB962740F8F200CC365C /* ArgumentParser */; };
 		CDA1CB992740F99F00CC365C /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = CDA1CB982740F99F00CC365C /* ArgumentParser */; };
 		CDA1CB9B2740FA8C00CC365C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA1CB9A2740FA8C00CC365C /* main.swift */; };
@@ -103,7 +103,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				CDA1CB942740F85800CC365C /* cli in CopyFiles */,
+				CDA1CB942740F85800CC365C /* Snowonder-cli in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +133,7 @@
 
 /* Begin PBXFileReference section */
 		CD711D362709BB4B00073018 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
-		CDA1CB892740F83600CC365C /* cli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cli; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA1CB892740F83600CC365C /* Snowonder-cli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Snowonder-cli"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA1CB8B2740F83600CC365C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		CDA1CB9A2740FA8C00CC365C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CDA1CB9D2740FFB300CC365C /* TextBufferEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBufferEditor.swift; sourceTree = "<group>"; };
@@ -294,7 +294,7 @@
 				E8B3C6C91EF7CFD300CD7679 /* Snowonder Extension.appex */,
 				E8E6983A1F0E5B2D00D50213 /* ImportArtisan.framework */,
 				E840386B1F0FC4EC003DF6C3 /* ImportArtisanTests.xctest */,
-				CDA1CB892740F83600CC365C /* cli */,
+				CDA1CB892740F83600CC365C /* Snowonder-cli */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -377,9 +377,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CDA1CB882740F83600CC365C /* cli */ = {
+		CDA1CB882740F83600CC365C /* Snowonder-cli */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDA1CB8F2740F83600CC365C /* Build configuration list for PBXNativeTarget "cli" */;
+			buildConfigurationList = CDA1CB8F2740F83600CC365C /* Build configuration list for PBXNativeTarget "Snowonder-cli" */;
 			buildPhases = (
 				CDA1CB852740F83600CC365C /* Sources */,
 				CDA1CB862740F83600CC365C /* Frameworks */,
@@ -389,12 +389,12 @@
 			);
 			dependencies = (
 			);
-			name = cli;
+			name = "Snowonder-cli";
 			packageProductDependencies = (
 				CDA1CB982740F99F00CC365C /* ArgumentParser */,
 			);
 			productName = cli;
-			productReference = CDA1CB892740F83600CC365C /* cli */;
+			productReference = CDA1CB892740F83600CC365C /* Snowonder-cli */;
 			productType = "com.apple.product-type.tool";
 		};
 		E840386A1F0FC4EC003DF6C3 /* ImportArtisanTests */ = {
@@ -536,7 +536,7 @@
 				E8B3C6C81EF7CFD300CD7679 /* Snowonder Extension */,
 				E8E698391F0E5B2D00D50213 /* ImportArtisan */,
 				E840386A1F0FC4EC003DF6C3 /* ImportArtisanTests */,
-				CDA1CB882740F83600CC365C /* cli */,
+				CDA1CB882740F83600CC365C /* Snowonder-cli */,
 			);
 		};
 /* End PBXProject section */
@@ -637,7 +637,7 @@
 /* Begin PBXTargetDependency section */
 		CDA1CB912740F83C00CC365C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CDA1CB882740F83600CC365C /* cli */;
+			target = CDA1CB882740F83600CC365C /* Snowonder-cli */;
 			targetProxy = CDA1CB902740F83C00CC365C /* PBXContainerItemProxy */;
 		};
 		E84038721F0FC4EC003DF6C3 /* PBXTargetDependency */ = {
@@ -678,6 +678,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Applications/Snowonder.app/Contents/Frameworks,
+					"~/Applications/Snowonder.app/Contents/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -695,6 +699,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Applications/Snowonder.app/Contents/Frameworks,
+					"~/Applications/Snowonder.app/Contents/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1005,7 +1013,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CDA1CB8F2740F83600CC365C /* Build configuration list for PBXNativeTarget "cli" */ = {
+		CDA1CB8F2740F83600CC365C /* Build configuration list for PBXNativeTarget "Snowonder-cli" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CDA1CB8D2740F83600CC365C /* Debug */,
