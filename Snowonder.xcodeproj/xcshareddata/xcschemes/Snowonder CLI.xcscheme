@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CDA1CB882740F83600CC365C"
-               BuildableName = "cli"
+               BuildableName = "Snowonder-cli"
                BlueprintName = "Snowonder-cli"
                ReferencedContainer = "container:Snowonder.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CDA1CB882740F83600CC365C"
-            BuildableName = "cli"
+            BuildableName = "Snowonder-cli"
             BlueprintName = "Snowonder-cli"
             ReferencedContainer = "container:Snowonder.xcodeproj">
          </BuildableReference>
@@ -72,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CDA1CB882740F83600CC365C"
-            BuildableName = "cli"
+            BuildableName = "Snowonder-cli"
             BlueprintName = "Snowonder-cli"
             ReferencedContainer = "container:Snowonder.xcodeproj">
          </BuildableReference>
